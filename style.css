@@ -1,0 +1,87 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+
+    color: #fff;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+body {
+    background: linear-gradient(#16213E, #0F3460, #533483, #E94560);
+}
+
+/*----------------*/
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.title {
+    padding: 10px;
+    margin-left: 100px;
+    color: #fff;
+
+    font-family: Snell Roundhand, cursive;
+}
+
+.info {
+    padding: auto;
+    margin-left: 50px;
+    color: #fff;
+
+    font-family: URW Chancery L, cursive;
+}
+
+/*-----Nav-------*/
+
+li {
+    margin-top: 10px;
+}
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+    
+    color: #fff;
+    text-decoration: none;
+
+    transition: color .2s linear;
+
+}
+
+.nav_link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #fff;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.nav_link:hover {
+    color: #fce38a;
+}
+
+.nav_link:hover:after {
+    opacity: 1;
+}
